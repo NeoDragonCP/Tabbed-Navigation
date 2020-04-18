@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Vars */
+    --navBarWidthDesktop: 80px;
+    --navBarHeightMobile: 60px;
+    --navBarIconSize: 28px;
+    --navBarTextSize: 14px;
+
+    --navBarBackgroundColor: #ffffff;
+    --navBarPrimaryFontColor: #333333;
+    --navBarActiveColor: #4cbbb9;
+    --navBarHoverColor: #dddddd;
+
+}
+
+body {
+    background-color: #eefafc;
+
+    /* Desktop space for bar */
+    margin: 0 0 0 var(--navBarWidthDesktop);
+
+}
+
+.content {
+    padding: 1rem;
+    display: none;
+}
+
+.content__dashboard {
+    display: none;
+}
+
+.content__person {
+    display: none;
+}
+
+.content__devices {
+    display: none;
+}
+
+.content__settings {
+    display: none;
+}
+
+.content-active {
+    display: inherit;
+}
+
+.nav {
+    background-color: var(--navBarBackgroundColor);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    position: fixed;
+
+    /* Desktop Look */
+    width: var(--navBarWidthDesktop);
+    flex-direction: column;
+    height: 100vh;
+    left: 0;
+    overflow-y: auto;
+
+}
+
+.nav__link {
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: var(--navBarTextSize);
+    color: var(--navBarPrimaryFontColor);
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+
+    /* Desktop */
+}
+
+/* Mobile - Bottom Nav */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0 0 var(--navBarHeight) 0;
+    }
+
+    .nav {
+        width: 100vw;
+        height: var(--navBarHeight);
+        bottom: 0;
+        overflow-x: auto;
+
+        flex-direction: row;
+    }
+
+    .nav__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        min-width: var(--navBarHeight);
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: sans-serif;
+        font-size: var(--navBarTextSize);
+        color: var(--navBarPrimaryFontColor);
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+.nav__link:hover {
+    background-color: var(--navBarHoverColor);
+}
+
+.nav__link-active {
+    color: var(--navBarActiveColor);
+}
+
+.nav__icon {
+    font-size: var(--navBarIconSize);
+}

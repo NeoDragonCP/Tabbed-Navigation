@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="nav.css" />
+
+    <script src="nav.js"></script>
+
+    <title>Bottom Nav Bar</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="nav">
+      <a
+        href="#"
+        class="nav__link nav__link-active"
+        onclick="clickedDashboard(this)"
+      >
+        <i class="material-icons nav__icon">
+          dashboard
+        </i>
+        <span class="nav__text">Dashboard</span>
+      </a>
+      <a href="#" class="nav__link" onclick="clickedPerson(this)">
+        <i class="material-icons nav__icon">
+          person
+        </i>
+        <span class="nav__text">Person</span>
+      </a>
+      <a href="#" class="nav__link" onclick="clickedDevices(this)">
+        <i class="material-icons nav__icon">
+          devices
+        </i>
+        <span class="nav__text">Devices</span>
+      </a>
+      <a href="#" class="nav__link" onclick="clickedSettings(this)">
+        <i class="material-icons nav__icon">
+          settings
+        </i>
+        <span class="nav__text">Settings</span>
+      </a>
+    </nav>
+
+    <!-- Content -->
+
+    <div class="content content__dashboard content-active">
+      <h1>Dashboard</h1>
+      <p>Users dashboard will go in here...</p>
+    </div>
+
+    <div class="content content__person">
+      <h1>Person</h1>
+      <p>Details for a person will go in here......</p>
+    </div>
+
+    <div class="content content__devices">
+      <h1>Devices</h1>
+      <p>List of users devices here....</p>
+    </div>
+
+    <div class="content content__settings">
+      <h1>Settings</h1>
+      <p>Users settings will be displayed here.....</p>
+    </div>
+  </body>
+</html>
