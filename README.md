@@ -1,7 +1,7 @@
 # Tabbed-Navigation
 Simple tabbed navigation that changes based on small or larger screens
 
-<iframe src='https://gfycat.com/ifr/WhisperedIllfatedHorseshoecrab' frameborder='0' scrolling='no' allowfullscreen width='640' height='952'></iframe>
+https://gfycat.com/whisperedillfatedhorseshoecrab
 Gif
 
 # About
