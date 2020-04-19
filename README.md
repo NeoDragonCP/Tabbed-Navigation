@@ -1,8 +1,8 @@
 # Tabbed-Navigation
 Simple tabbed navigation that changes based on small or larger screens
 
-https://gfycat.com/whisperedillfatedhorseshoecrab
-Gif
+![Screenshot](https://i.imgur.com/bf2L1nC.png)
+Screenshot
 
 # About
 I found this tutorial on bottom navigation menu ( https://www.youtube.com/watch?v=uHL6aeWUEQQ&list=WL&index=15&t=0s )
